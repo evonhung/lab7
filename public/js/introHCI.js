@@ -13,7 +13,8 @@ function initializePage() {
 	$(".likeBtn").click(clickLikeBtn);
 }
 
-function clickLikeCtr() {
+function clickLikeCtr(e) {
+	e.preventDefault();
 	ga('create', UA-134923971-1, 'auto');
 	ga('send', 'event', 'like', 'click');
 }
